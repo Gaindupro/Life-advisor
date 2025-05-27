@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Advisor</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+
+        <!-- Main Title -->
+        <center><h1>Life Advisor</h1></center>
+        
+        <!-- Form for submitting biodata -->
+        <form id="biodataForm">
+            <h2>Fill Your Information</h2>
+            <input type="text" id="name" placeholder="Name" required>
+            <select id="ageCategory" required>
+                <option value="10-20">10-20</option>
+                <option value="21-30">21-30</option>
+                <option value="31-40">31-40</option>
+                <option value="41-50">41-50</option>
+                <option value="51+">51+</option>
+            </select>
+            <textarea id="bio" placeholder="Tell us about yourself..." required></textarea>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="tel" id="mobile" placeholder="Mobile Number" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="profession" placeholder="Profession" required>
+            <input type="text" id="schoolOrCampus" placeholder="School or Campus" required>
+            <textarea id="parentsDetails" placeholder="Parents Details" required></textarea>
+            <select id="maritalStatus" required>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <!-- Loader Animation -->
+        <div id="loader" style="display: none;">
+            <img src="Dual Ring@1x-1.0s-200px-200px.gif" alt="Loading...">
+        </div>
+        
+        <!-- Results Section -->
+        <div id="results" style="display: none;">
+            <h3>Predicted Life Problems:</h3>
+            
+<ul>
+  <li><a href="index.html">Start</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+        </div>
+
+        <!-- Social Media Sharing Buttons -->
+        <div>
+            <button id="downloadBtn" style="display: none;">Download PDF</button>
+            <button id="whatsappBtn" style="display: none;">Share on WhatsApp</button>
+            <button id="facebookBtn" style="display: none;">Share on Facebook</button>
+        </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <a style="color:white" href="about.html"><p>&copy; 2025 Life Advisor. All rights reserved.</p></a>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
